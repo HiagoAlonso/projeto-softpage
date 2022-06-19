@@ -12,6 +12,7 @@
     --whiteShadow: #937f6c;
     
     --maroonLight: #9f7c60;
+    --maroonMedium: #80634d;
     --maroonShadow: #493f36;
     
     --greenLight: #71862d;
@@ -48,7 +49,7 @@ body::after {
     position: absolute;
     top: 0; left: 0;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     background-color: var(--bg);
     z-index: -1;
 }
@@ -99,12 +100,13 @@ header > #logo > span {
 }
 
 main {
-    padding: 20px;
+    width: 100%;
 }
 
 #main-head {
     margin-top: 10vh;
-    margin-bottom: 50vh;
+    padding: 20px;
+    margin-bottom: 35vh;
 }
 
 #main-head h1 {
@@ -133,6 +135,44 @@ main {
     border-radius: 0 30px 30px 0;
 }
 
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+}
+
+.main-content-icon {
+    width: 20vh;
+    padding: 10px;
+}
+
+.main-content-link {
+    font-size: 0.7em;
+}
+
+.main-content-title {
+    color: var(--maroonShadow);
+}
+
+.main-content-text {
+    color: var(--maroonLight);
+    text-shadow: 0 0 1px var(--maroonLight);
+}
+
+footer {
+    width: 100%;
+    height: 50vh;
+    color: white;
+    background-color: var(--maroonLight);
+    border-top: 25px solid var(--maroonMedium);
+    box-shadow: 0 0 2px var(--maroonShadow);
+    padding: 10px;
+}
 
 @media only screen and (min-height: 400px) {
 
