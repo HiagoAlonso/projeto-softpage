@@ -11,6 +11,7 @@
     --whiteLight: #d9ccbf;
     --whiteShadow: #937f6c;
     
+    --maroonLighter: #d6a781;
     --maroonLight: #9f7c60;
     --maroonMedium: #80634d;
     --maroonShadow: #493f36;
@@ -49,7 +50,7 @@ body::after {
     position: absolute;
     top: 0; left: 0;
     width: 100%;
-    height: 150vh;
+    height: 150%;
     background-color: var(--bg);
     z-index: -1;
 }
@@ -106,7 +107,6 @@ main {
 #main-head {
     margin-top: 10vh;
     padding: 20px;
-    margin-bottom: 35vh;
 }
 
 #main-head h1 {
@@ -135,7 +135,15 @@ main {
     border-radius: 0 30px 30px 0;
 }
 
-.main-content {
+
+
+#main-content-info {
+    margin-bottom: 25vh;
+    margin-top: 35vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.315);
+}
+
+.main-content-info-block {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,14 +172,96 @@ main {
     text-shadow: 0 0 1px var(--maroonLight);
 }
 
+
+
+
+
+#main-content-services {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 25vh;
+}
+
+.main-content-signature {
+    background-color: rgba(255, 255, 255, 0.664);
+    border: 1px solid var(--maroonLighter);
+    border-radius: 3px;
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.315);
+}
+
+#main-content-services li {
+    list-style-type: "\2714\00A0\00A0";
+    list-style-position: inside;
+    text-align: left;
+
+    color: var(--maroonLight);
+    text-shadow: 0 0 1px var(--maroonShadow);
+}
+
+#main-content-services h3 {
+    margin-bottom: 10px;
+}
+
+.buy-button {
+    margin-top: 20px;
+    padding: 6px 12px;
+    border-radius: 30px;
+    border: none;
+    background-color: #0d65d0;
+    color: white;
+}
+
+.test-button {
+    padding: 4px 12px;
+    border-radius: 30px;
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+#popular-choice {
+    border: 2px solid goldenrod;
+    border-top: 10px solid gold;
+}
+
+#popular-choice span {
+    color: gold;
+    text-shadow: goldenrod;
+}
+
+
 footer {
     width: 100%;
-    height: 50vh;
-    color: white;
-    background-color: var(--maroonLight);
-    border-top: 25px solid var(--maroonMedium);
+    background-color: whitesmoke;
+    border-top: 10px solid var(--maroonLight);
     box-shadow: 0 0 2px var(--maroonShadow);
+}
+
+footer h2 { 
+    font-family: var(--fontTitle);
+    color: var(--maroonShadow);
+    text-shadow: 0 0 1px var(--maroonShadow);
+    letter-spacing: 0.25em;
+    font-size: 2em;
+}
+
+footer a {
+    text-shadow: 0 0 1px var(--maroonMedium);
+} footer a:hover {
+    color: var(--maroonShadow);
+    text-decoration: underline;
+    text-shadow: 0 0 1px var(--maroonShadow);
+}
+
+footer div {
+    text-align: center;
+    border-bottom: 1px solid var(--shadowBlack);
+    width: 100%;
     padding: 10px;
+} footer ul {
+    list-style: none;
 }
 
 @media only screen and (min-height: 400px) {

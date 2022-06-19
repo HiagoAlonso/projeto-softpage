@@ -32,53 +32,107 @@
             <button id="center">Veja mais</button>
         </section>
 
-        
-
-        <section class="main-content">
-            <img class="main-content-icon" src="images/ico-tutorial.png" alt="">
-            <h2 class="main-content-title">Lorem Ipsum</h2>
-            <p class="main-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa excepturi totam aspernatur quia tenetur eum beatae!</p>
-        </section>
-
-        <section class="main-content">
-            <img class="main-content-icon" src="images/ico-videocall.png" alt="">
+    
+        <section id="main-content-info">
+            <div class="main-content-info-block">
+                <img class="main-content-icon" src="images/ico-tutorial.png" alt="">
+                <h2 class="main-content-title">Lorem Ipsum</h2>
+                <p class="main-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa excepturi totam aspernatur quia tenetur eum beatae!</p>
+            </div>
+            <div class="main-content-info-block">
+                <img class="main-content-icon" src="images/ico-videocall.png" alt="">
             
-            <h2 class="main-content-title">Lorem Ipsum</h2>
-            <p class="main-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa excepturi totam aspernatur quia tenetur eum beatae!</p>
+                <h2 class="main-content-title">Lorem Ipsum</h2>
+                <p class="main-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa excepturi totam aspernatur quia tenetur eum beatae!</p>
+            </div>
+            <div class="main-content-info-block">
+                <img class="main-content-icon" src="images/ico-elearning.png" alt="">
+                <h2 class="main-content-title">Lorem Ipsum</h2>
+                <p class="main-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa excepturi totam aspernatur quia tenetur eum beatae!</p>
+            </div>
         </section>
 
-        <section class="main-content">
-            <img class="main-content-icon" src="images/ico-elearning.png" alt="">
+        <section id="main-content-services">
 
-            <h2 class="main-content-title">Lorem Ipsum</h2>
-            <p class="main-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa excepturi totam aspernatur quia tenetur eum beatae!</p>
+            <div class="main-content-signature">
+                <h2 >Standard</h2>
+                <h3 class="main-content-title">R$ 35/Month</h3>
+                <p class="main-content-text">
+                    <ul>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Amet consectetur</li>
+                        <li>Adipisicing elit</li>
+                    </ul>
+                </p>
+                <button class="buy-button">Compre agora</button>
+            </div>
+            <div class="main-content-signature" id="popular-choice">
+                <span>Escolha Popular</span>
+                <h2>SoftNet Pro</h2>
+                <h3 class="main-content-title">R$ 60/Month</h3>
+                <p class="main-content-text">
+                    <ul>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Amet consectetur</li>
+                        <li>Adipisicing elit</li>
+                        <li>Culpa excepturi totam</li>
+                        <li>Totam aspernatur</li>
+                    </ul>
+                </p>
+                <button class="buy-button">Compre agora</button>
+                <button class="test-button">Teste grátis</button>
+            </div>
+            <div class="main-content-signature">
+                <h2>SoftNet Const</h2>
+                <h3 class="main-content-title">R$ 720/Year</h3>
+                <p class="main-content-text">
+                    <ul>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Amet consectetur</li>
+                        <li>Adipisicing elit</li>
+                        <li>Culpa excepturi totam</li>
+                        <li>Totam aspernatur</li>
+                    </ul>
+                </p>
+                <button class="buy-button">Compre agora</button>
+            </div>
         </section>
     </main>
 
     <footer>
-        <a class="main-content-link" href="https://www.flaticon.com/free-icons/education" target="_blank" rel="external" title="education icons">Education icons created by Freepik - Flaticon</a>
 
-        <a class="main-content-link" href="https://www.flaticon.com/free-icons/video-call" target="_blank" rel="external" title="video call icons">Video call icons created by Freepik - Flaticon</a>
+        <div id="footer-useful-links">
+            <ul>
+                <li><a href="#">Privacidade</a><br></li>    
+                <li><a href="#">Termos de uso</a><br></li>
+                <li><a href="#">Preferências de cookies</a><br></li>
+            </ul>
+        </div>
 
-        <a class="main-content-link" href="https://www.flaticon.com/free-icons/e-learning" target="_blank" rel="external" title="e learning icons">E learning icons created by Freepik - Flaticon</a>
+        <div id="footer-contact">
+            <p>Rua Domingos Olímpio, Centro, Sobral - CE.</p>
+            <p>+55 (88) 9 9942-1094</p>
+            <p>info@softnet.com</p>
+        </div>
+
+        <div id="footer-credits">
+            <p>
+                <a href="https://www.flaticon.com/free-icons/education" target="_blank" rel="external">Education</a>,
+                <a href="https://www.flaticon.com/free-icons/video-call" target="_blank" rel="external">Video call</a> and
+                <a href="https://www.flaticon.com/free-icons/e-learning" target="_blank" rel="external">E-Learning</a>
+                icons created by Freepik - Flaticon <br>
+            </p>
+        </div>
+
+        <div id="footer-copyright">
+            <p>
+                Site Criado por <a href="https://github.com/HiagoAlonso" target="_blank">Hiago C. Alonso</a>.
+                <br>Copyright©. Todos os direitos reservados.
+            </p>
+        </div>
+
     </footer>
     <script>
-
-        /*
-        function scrollMiddle(event) {
-
-            event.preventDefault()
-
-            let top = document.querySelector('#center')
-            top.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            })
-        }
-
-        $("#center").click(scrollMiddle)
-
-        */
 
         $(document).ready(function() {
             $("#flip").click(function () {
