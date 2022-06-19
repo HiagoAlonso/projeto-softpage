@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Softpage | Mobile First</title>
+</head>
+<body>
+    <header>
+        <a href="#" id="logo">Soft<span>Net</span></a>
+
+        <ul id="nav">
+            <div id="flip">
+                <li><a href="#">Home</a>
+            </div>
+
+            <div id="menu">
+                <li><a href="#">About</a>
+                <li><a href="#">Contact</a>
+                <li><a href="#">Services</a>
+            </div>
+        </ul>
+
+    </header>
+    <main>
+        <section id="main-head">
+            <h1>Conexão</h1>
+            <h2>Navegue com segurança <br> e conforto.</h3>
+            <button id="center">Veja mais</button>
+        </section>
+
+        <section id="main-intro">
+            <h2>Lorem</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa excepturi totam aspernatur quia tenetur eum beatae! Esse quibusdam qui eveniet optio sint sequi quae earum excepturi maiores assumenda, cupiditate praesentium?
+            Quo repellat quod aspernatur accusantium a totam consequuntur repellendus eveniet, magnam ex aperiam aliquid. Esse id minus voluptas aliquid error rem? Amet, magni? Excepturi molestias placeat, id consequatur dolorum sunt.
+            Provident alias eligendi voluptate molestias molestiae consequatur quo nam illo blanditiis ullam natus ipsum facilis ab velit error pariatur, distinctio consequuntur assumenda itaque soluta sit iure ex. Quia, molestiae quos?</p>
+        </section>
+
+    </main>
+
+    <script>
+
+        /*
+        function scrollMiddle(event) {
+
+            event.preventDefault()
+
+            let top = document.querySelector('#center')
+            top.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+        }
+
+        $("#center").click(scrollMiddle)
+
+        */
+
+        $(document).ready(function() {
+            $("#flip").click(function () {
+                $("#menu").slideToggle('slow')
+            })
+        })
+    </script>
+</body>
+</html>

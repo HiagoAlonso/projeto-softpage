@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;500;800&display=swap');
+
+:root {
+
+    --bg: #d6a78146;
+
+    --whiteLight: #d9ccbf;
+    --whiteShadow: #937f6c;
+    
+    --maroonLight: #9f7c60;
+    --maroonShadow: #493f36;
+    
+    --greenLight: #71862d;
+    --greenShadow: #3a480f;
+
+    --shadowLight: #d6a781d7;
+    --shadowBlack: #3a480f46;
+
+    --fontMain: 'Poppins', sans-serif;
+    --fontTitle: 'Arima Madurai', cursive;
+    
+}
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: var(--fontMain);
+}
+
+a {
+    text-decoration: none;
+    color: black;   
+}
+
+body {
+    background-image: url(images/pexels-karolina-grabowska-4466652.jpg);
+    background-position: bottom left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg);
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+}
+
+header > #logo {
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 0 0 2px black;
+}
+
+header > #logo > span {
+    color: var(--maroonLight);
+    text-shadow: 0 0 2px var(--shadowLight);
+}
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100px;
+    text-align: center;
+}
+
+
+#nav li {
+    box-shadow: 0 0 7px rgba(73, 63, 54, 0.1);
+    background-color: var(--whiteLight);
+    padding: 3px 10px 3px 10px;
+    margin: 1px;
+}
+
+#nav > #menu {
+    display: none;
+}
+
+#nav > #flip > li {
+    background-color: var(--maroonLight);
+    padding: 3px 10px 3px 10px;
+    border-radius: 2px;
+}
+
+main {
+    padding: 20px;
+}
+
+#main-head {
+    margin-top: 10vh;
+    margin-bottom: 50vh;
+}
+
+#main-head h1 {
+    color: var(--greenLight);
+    letter-spacing: 0.15em;
+    text-shadow: 2px 2px 3px var(--maroonShadow);
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    font-family: var(--fontTitle);
+    font-weight: 800;
+    font-size: 3em;
+}
+
+#main-head h2 {
+    font-family: var(--fontTitle);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.315);
+    margin: 20px 0 20px 10px;
+}
+
+#main-head button {
+    padding: 2px 20px;
+    margin-left: 10px;
+    background-color: var(--shadowLight);
+    border: 1px solid var(--whiteShadow);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.315);
+    border-radius: 0 30px 30px 0;
+}
+
+
+@media only screen and (min-height: 400px) {
+
+}
