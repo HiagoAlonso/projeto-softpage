@@ -8,7 +8,7 @@
 
     --bg: #d6a78146;
 
-    --whiteLight: #d9ccbf;
+    --whiteLight: #fff7f0;
     --whiteShadow: #937f6c;
     
     --maroonLighter: #d6a781;
@@ -16,6 +16,7 @@
     --maroonMedium: #80634d;
     --maroonShadow: #493f36;
     
+    --greenLighter: #99A62A;
     --greenLight: #71862d;
     --greenShadow: #3a480f;
 
@@ -58,7 +59,6 @@ body::after {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     flex-direction: column;
     width: 100%;
 }
@@ -210,16 +210,18 @@ main {
     padding: 6px 12px;
     border-radius: 30px;
     border: none;
-    background-color: #0d65d0;
+    background-color: #1472e6;
     color: white;
-}
+    cursor: pointer;
+}.buy-button:hover {background-color: #1264ca;}
 
 .test-button {
     padding: 4px 12px;
     border-radius: 30px;
     border: 1px solid black;
     margin-top: 5px;
-}
+    cursor: pointer;
+}.test-button:hover {background-color: var(--shadowBlack);}
 
 #popular-choice {
     border: 2px solid goldenrod;
@@ -239,14 +241,6 @@ footer {
     box-shadow: 0 0 2px var(--maroonShadow);
 }
 
-footer h2 { 
-    font-family: var(--fontTitle);
-    color: var(--maroonShadow);
-    text-shadow: 0 0 1px var(--maroonShadow);
-    letter-spacing: 0.25em;
-    font-size: 2em;
-}
-
 footer a {
     text-shadow: 0 0 1px var(--maroonMedium);
 } footer a:hover {
@@ -264,6 +258,295 @@ footer div {
     list-style: none;
 }
 
-@media only screen and (min-height: 400px) {
-
+footer h2 { 
+    font-family: var(--fontTitle);
+    color: var(--maroonShadow);
+    text-shadow: 0 0 1px var(--maroonShadow);
+    letter-spacing: 0.15em;
+    font-size: 1.5em;
 }
+
+#footer-copyright {
+    background-color: var(--maroonShadow);
+    color: var(--whiteLight);
+} #footer-copyright a {
+    color: white;
+}
+
+
+
+
+@media (min-width: 910px) {
+
+    body {
+        background-image: url(images/pexels-karolina-grabowska-4466652-\(g\).jpg);
+        background-position: center center;
+    } body::after {
+        background-color: var(--bg);
+    }
+    
+    header {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 15px;
+        box-shadow: 0 0 7px var(--whiteShadow);
+        background-color: var(--whiteLight);
+    }
+
+    header > #logo {
+        font-size: 4em;
+        margin-left: -25vw;
+    }
+
+    #nav {
+        flex-direction: row;
+    }   #nav > #menu {
+        display: flex;
+    }
+    
+    #nav li, #nav > #flip > li {
+        padding: 5px 15px 5px 15px;
+        margin-left: 5px;
+        box-shadow: 0 0 0;
+
+    }   #nav li:hover, #nav > #flip > li:hover {
+        background-color: var(--maroonLight);
+        transition: 0.4s;
+    }
+    
+
+    #main-head h1 {
+        border-bottom: 0;
+        font-size: 5em;
+        margin-left: 15vw;
+        color: var(--greenLighter);
+        text-shadow: 2px 2px 3px var(--greenShadow);
+    }
+
+    #main-head h2 {
+        font-size: 2em;
+        margin-left: 15vw;
+        margin-top: 0;
+    }
+
+    #main-head button {
+        font-size: 1em;
+        margin-left: 15vw;
+        border-radius: 3px;
+        padding: 5px 30px;
+        box-shadow: none;
+    } #main-head button:hover {
+        cursor: pointer;
+        background-color: var(--maroonLighter);
+    }
+
+    #main-content-info {
+        display: flex;
+        flex-direction: row;
+    } .main-content-info-block {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    
+    #main-content-services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25vh;
+        width: 100%;
+        gap: 50px;
+    }
+    
+    .main-content-signature {
+        height: 400px;
+        background-color: white;
+    }
+    .main-content-signature > h2 {
+        padding-top: 37px;
+        padding-bottom: 5px;
+    }
+    .main-content-signature p {
+        padding: 3px;
+    }
+    
+    #box-x > button {
+        margin-top: 72px;
+    } #box-x > h2 {
+        margin-top: 2px;
+    }
+
+    #popular-choice > h2 {
+        padding: 5px;
+    }
+
+
+
+
+    footer {
+        border-top: none;
+        box-shadow: 0 0 7px var(--maroonLight);
+        font-size: 0.9em;
+    }
+
+    #footer-container {
+        display: flex;
+    }
+
+    footer div {
+        text-align: left;
+        border-bottom: none;
+        padding: 20px;
+    }
+        
+    #footer-copyright {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--maroonShadow);
+        color: var(--whiteLight);
+    } #footer-copyright a {
+        color: white;
+    }
+}
+
+
+
+/*
+
+
+
+
+@media (min-width: 910px) {
+
+    body {
+        background-image: url(images/pexels-karolina-grabowska-4466652-\(g\).jpg);
+        background-position: center center;
+    } body::after {
+        background-color: var(--bg);
+    }
+    
+    header {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 15px;
+        box-shadow: 0 0 7px var(--whiteShadow);
+        background-color: var(--whiteLight);
+    }
+
+    header > #logo {
+        font-size: 4em;
+        margin-left: -25vw;
+    }
+
+    #nav {
+        flex-direction: row;
+    }   #nav > #menu {
+        display: flex;
+    }
+    
+    #nav li, #nav > #flip > li {
+        padding: 5px 15px 5px 15px;
+        margin-left: 5px;
+        box-shadow: 0 0 0;
+
+    }   #nav li:hover, #nav > #flip > li:hover {
+        background-color: var(--maroonLight);
+        transition: 0.4s;
+    }
+    
+
+    #main-head h1 {
+        border-bottom: 0;
+        font-size: 5em;
+        margin-left: 15vw;
+        color: var(--greenLighter);
+        text-shadow: 2px 2px 3px var(--greenShadow);
+    }
+
+    #main-head h2 {
+        font-size: 2em;
+        margin-left: 15vw;
+        margin-top: 0;
+    }
+
+    #main-head button {
+        font-size: 1em;
+        margin-left: 15vw;
+        border-radius: 3px;
+        padding: 5px 30px;
+        box-shadow: none;
+    } #main-head button:hover {
+        cursor: pointer;
+        background-color: var(--maroonLighter);
+    }
+
+    #main-content-info {
+        display: flex;
+        flex-direction: row;
+    } .main-content-info-block {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    
+    #main-content-services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25vh;
+        width: 100%;
+        gap: 50px;
+    }
+    
+    .main-content-signature {
+        height: 400px;
+        background-color: white;
+    }
+    .main-content-signature > h2 {
+        padding-top: 37px;
+        padding-bottom: 5px;
+    }
+    .main-content-signature p {
+        padding: 3px;
+    }
+    
+    #box-x > button {
+        margin-top: 72px;
+    } #box-x > h2 {
+        margin-top: 2px;
+    }
+
+    #popular-choice > h2 {
+        padding: 5px;
+    }
+
+
+
+
+    footer {
+        border-top: none;
+        box-shadow: 0 0 7px var(--maroonLight);
+        font-size: 0.9em;
+    }
+
+    #footer-container {
+        display: flex;
+    }
+
+    footer div {
+        text-align: left;
+        border-bottom: none;
+        padding: 20px;
+    }
+        
+    #footer-copyright {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--maroonShadow);
+        color: var(--whiteLight);
+    } #footer-copyright a {
+        color: white;
+    }
+}
+
+*/
