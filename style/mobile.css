@@ -39,7 +39,7 @@ a {
 }
 
 body {
-    background-image: url(images/pexels-karolina-grabowska-4466652.jpg);
+    background-image: url(../images/pexels-karolina-grabowska-4466652.jpg);
     background-position: bottom left;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -275,31 +275,24 @@ footer h2 {
 
 
 
-
-@media (min-width: 910px) {
-
-    body {
-        background-image: url(images/pexels-karolina-grabowska-4466652-\(g\).jpg);
-        background-position: center center;
-    } body::after {
-        background-color: var(--bg);
-    }
-    
+@media only screen and (min-width: 400px) and (max-width: 930px) {
     header {
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding-bottom: 15px;
         box-shadow: 0 0 7px var(--whiteShadow);
         background-color: var(--whiteLight);
     }
 
     header > #logo {
-        font-size: 4em;
-        margin-left: -25vw;
+        font-size: 3em;
     }
 
     #nav {
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }   #nav > #menu {
         display: flex;
     }
@@ -313,240 +306,39 @@ footer h2 {
         background-color: var(--maroonLight);
         transition: 0.4s;
     }
+
+
+    @media (min-width: 550px){
+
+        #main-content-services {
+            max-width: 350px;
+            margin: auto;
+            margin-bottom: 25vh;
+        }
     
-
-    #main-head h1 {
-        border-bottom: 0;
-        font-size: 5em;
-        margin-left: 15vw;
-        color: var(--greenLighter);
-        text-shadow: 2px 2px 3px var(--greenShadow);
-    }
-
-    #main-head h2 {
-        font-size: 2em;
-        margin-left: 15vw;
-        margin-top: 0;
-    }
-
-    #main-head button {
-        font-size: 1em;
-        margin-left: 15vw;
-        border-radius: 3px;
-        padding: 5px 30px;
-        box-shadow: none;
-    } #main-head button:hover {
-        cursor: pointer;
-        background-color: var(--maroonLighter);
-    }
-
-    #main-content-info {
-        display: flex;
-        flex-direction: row;
-    } .main-content-info-block {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
+        #main-head h1 {
+            border-bottom: 0;
+            font-size: 5em;
+            margin-left: 15vw;
+            color: var(--greenLighter);
+            text-shadow: 2px 2px 3px var(--greenShadow);
+        }
     
-    #main-content-services {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 25vh;
-        width: 100%;
-        gap: 50px;
-    }
+        #main-head h2 {
+            font-size: 2em;
+            margin-left: 15vw;
+            margin-top: 0;
+        }
     
-    .main-content-signature {
-        height: 400px;
-        background-color: white;
-    }
-    .main-content-signature > h2 {
-        padding-top: 37px;
-        padding-bottom: 5px;
-    }
-    .main-content-signature p {
-        padding: 3px;
-    }
-    
-    #box-x > button {
-        margin-top: 72px;
-    } #box-x > h2 {
-        margin-top: 2px;
-    }
-
-    #popular-choice > h2 {
-        padding: 5px;
-    }
-
-
-
-
-    footer {
-        border-top: none;
-        box-shadow: 0 0 7px var(--maroonLight);
-        font-size: 0.9em;
-    }
-
-    #footer-container {
-        display: flex;
-    }
-
-    footer div {
-        text-align: left;
-        border-bottom: none;
-        padding: 20px;
-    }
-        
-    #footer-copyright {
-        display: flex;
-        justify-content: space-between;
-        background-color: var(--maroonShadow);
-        color: var(--whiteLight);
-    } #footer-copyright a {
-        color: white;
+        #main-head button {
+            font-size: 1em;
+            margin-left: 15vw;
+            border-radius: 3px;
+            padding: 5px 30px;
+            box-shadow: none;
+        } #main-head button:hover {
+            cursor: pointer;
+            background-color: var(--maroonLighter);
+        }
     }
 }
-
-
-
-/*
-
-
-
-
-@media (min-width: 910px) {
-
-    body {
-        background-image: url(images/pexels-karolina-grabowska-4466652-\(g\).jpg);
-        background-position: center center;
-    } body::after {
-        background-color: var(--bg);
-    }
-    
-    header {
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding-bottom: 15px;
-        box-shadow: 0 0 7px var(--whiteShadow);
-        background-color: var(--whiteLight);
-    }
-
-    header > #logo {
-        font-size: 4em;
-        margin-left: -25vw;
-    }
-
-    #nav {
-        flex-direction: row;
-    }   #nav > #menu {
-        display: flex;
-    }
-    
-    #nav li, #nav > #flip > li {
-        padding: 5px 15px 5px 15px;
-        margin-left: 5px;
-        box-shadow: 0 0 0;
-
-    }   #nav li:hover, #nav > #flip > li:hover {
-        background-color: var(--maroonLight);
-        transition: 0.4s;
-    }
-    
-
-    #main-head h1 {
-        border-bottom: 0;
-        font-size: 5em;
-        margin-left: 15vw;
-        color: var(--greenLighter);
-        text-shadow: 2px 2px 3px var(--greenShadow);
-    }
-
-    #main-head h2 {
-        font-size: 2em;
-        margin-left: 15vw;
-        margin-top: 0;
-    }
-
-    #main-head button {
-        font-size: 1em;
-        margin-left: 15vw;
-        border-radius: 3px;
-        padding: 5px 30px;
-        box-shadow: none;
-    } #main-head button:hover {
-        cursor: pointer;
-        background-color: var(--maroonLighter);
-    }
-
-    #main-content-info {
-        display: flex;
-        flex-direction: row;
-    } .main-content-info-block {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    
-    #main-content-services {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 25vh;
-        width: 100%;
-        gap: 50px;
-    }
-    
-    .main-content-signature {
-        height: 400px;
-        background-color: white;
-    }
-    .main-content-signature > h2 {
-        padding-top: 37px;
-        padding-bottom: 5px;
-    }
-    .main-content-signature p {
-        padding: 3px;
-    }
-    
-    #box-x > button {
-        margin-top: 72px;
-    } #box-x > h2 {
-        margin-top: 2px;
-    }
-
-    #popular-choice > h2 {
-        padding: 5px;
-    }
-
-
-
-
-    footer {
-        border-top: none;
-        box-shadow: 0 0 7px var(--maroonLight);
-        font-size: 0.9em;
-    }
-
-    #footer-container {
-        display: flex;
-    }
-
-    footer div {
-        text-align: left;
-        border-bottom: none;
-        padding: 20px;
-    }
-        
-    #footer-copyright {
-        display: flex;
-        justify-content: space-between;
-        background-color: var(--maroonShadow);
-        color: var(--whiteLight);
-    } #footer-copyright a {
-        color: white;
-    }
-}
-
-*/
