@@ -21,22 +21,27 @@
         margin-left: -25vw;
     }
 
+    header > button {
+        display: none;
+    }
+
     #nav {
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }   #nav > #menu {
         display: flex;
     }
-    
-    #nav li, #nav > #flip > li {
+
+    #nav li {
         padding: 5px 15px 5px 15px;
         margin-left: 5px;
         box-shadow: 0 0 0;
 
-    }   #nav li:hover, #nav > #flip > li:hover {
+    }   #nav li:hover {
         background-color: var(--maroonLight);
         transition: 0.4s;
     }
-    
 
     #main-head h1 {
         border-bottom: 0;

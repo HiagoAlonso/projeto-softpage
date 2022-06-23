@@ -61,6 +61,7 @@ header {
     align-items: center;
     flex-direction: column;
     width: 100%;
+    background-color: var(--whiteLight);
 }
 
 header > #logo {
@@ -74,6 +75,21 @@ header > #logo > span {
     text-shadow: 0 0 2px var(--shadowLight);
 }
 
+header > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 0px solid var(--maroonLighter);
+
+    background-color: var(--whiteLight);
+    padding: 3px 10px 3px 10px;
+    width: 100%;
+    box-shadow: 0 10 7px rgba(73, 63, 54, 0.1);
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
 #nav {
     display: flex;
     flex-direction: column;
@@ -82,10 +98,8 @@ header > #logo > span {
     text-align: center;
 }
 
-
 #nav li {
     box-shadow: 0 0 7px rgba(73, 63, 54, 0.1);
-    background-color: var(--whiteLight);
     padding: 3px 10px 3px 10px;
     margin: 1px;
 }
@@ -94,11 +108,11 @@ header > #logo > span {
     display: none;
 }
 
-#nav > #flip > li {
-    background-color: var(--maroonLight);
-    padding: 3px 10px 3px 10px;
-    border-radius: 2px;
+.current-page {
+    background-color: var(--maroonLight) !important;
 }
+
+
 
 main {
     width: 100%;
@@ -274,6 +288,15 @@ footer h2 {
 }
 
 
+@media (max-width: 400px) {
+    #menu > li {
+        background-color: var(--whiteLight);
+        margin: 0;
+    }
+    #nav {
+        width: 100%;
+    }
+}
 
 @media only screen and (min-width: 400px) and (max-width: 930px) {
     header {
@@ -287,6 +310,10 @@ footer h2 {
 
     header > #logo {
         font-size: 3em;
+    }
+
+    header > button {
+        display: none;
     }
 
     #nav {
