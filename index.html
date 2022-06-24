@@ -32,7 +32,7 @@
         <section id="main-head">
             <h1>Conexão</h1>
             <h2>Navegue com segurança <br> e conforto.</h3>
-            <button id="center">Veja mais</button>
+            <button id="scroll-to-services">Veja mais</button>
         </section>
     
         <section id="main-content-info">
@@ -144,37 +144,22 @@
 
     </footer>
     <script>
+        $("document").ready(function() {
 
-        
-        let flip = document.querySelector("#flip")
-        let menu = document.querySelector("#menu")
-
-        flip.addEventListener("click", function() {
-            $("#menu").slideToggle('slow')
-        })
-        
-        /*
-        
-
-
-
-
-        $(window).resize(function(){
-            //seu código aqui
-        }).trigger("resize");
-
-
-
-        var $element = $("nav");
-
-        $(window).resize(function () {    
-            if (window.innerWidth < 768) {
-                $("#flip").click(function () {
-                    $("#menu").slideToggle('slow')
+            $("#scroll-to-services").click(function(){
+                let servicePlace = $("#main-content-services").offset().top
+                $("html, body").animate({
+                    scrollTop: servicePlace
                 })
-            }
-        });
-        */
+            })
+    
+            let flip = document.querySelector("#flip")
+    
+            flip.addEventListener("click", function() {
+                $("#menu").slideToggle('slow')
+            })
+            
+        })
     </script>
 </body>
 </html>
